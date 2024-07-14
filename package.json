@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "node test/test.js",
-    "coverage": "./node_modules/.bin/istanbul cover test/test.js",
     "nocov": "node test/*.js",
     "coverage": "./node_modules/.bin/istanbul cover test/*.js && ./node_modules/.bin/istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "codeclimate": "CODECLIMATE_REPO_TOKEN=1c0b40358b6943d3ecd94d6254d5cd2ac5dfc51188b4019bfca83b9b8a3542e2 ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info",
@@ -18,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/docdis/autocomplete.git"
+    "url": "https://github.com/dwyl/autocomplete.git"
   },
   "keywords": [
     "autocomplete",
@@ -26,16 +25,19 @@
     "dictionary",
     "suggestions"
   ],
-  "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic)",
+  "author": "@nelsonic github.com/nelsonic",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/docdis/autocomplete/issues"
+    "url": "https://github.com/dwyl/autocomplete/issues"
   },
-  "homepage": "https://github.com/docdis/autocomplete",
+  "homepage": "https://github.com/dwyl/autocomplete",
   "devDependencies": {
-    "codeclimate-test-reporter": "0.0.4",
-    "istanbul": "^0.3.14",
-    "pre-commit": "1.0.7"
+    "@tapjs/typescript": "^2.0.3",
+    "nodemon": "^3.1.4",
+    "nyc": "^17.0.0",
+    "tap": "^20.0.3",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.3"
   },
   "pre-commit": [
     "jshint",
@@ -43,6 +45,6 @@
     "codeclimate"
   ],
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 20"
   }
 }
