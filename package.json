@@ -42,6 +42,6 @@
     "codeclimate"
   ],
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 20"
   }
 }
